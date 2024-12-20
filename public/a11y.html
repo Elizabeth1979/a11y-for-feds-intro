@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <meta name="color-scheme" content="dark light" />
+    <script src="./main.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="/public/a11y-favicon.png" />
+    <title>Test</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="header">
+        <a id="wix-logo-link" target="_blank" href="https://www.wix.com/">
+          <svg
+            id="wix-logo-svg"
+            viewBox="0 0 166 64"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#a)">
+              <path
+                d="M165.301 0h-9.131a7.637 7.637 0 0 0-6.323 3.352l-12.212 18.014a.82.82 0 0 1-1.356 0L124.068 3.352A7.635 7.635 0 0 0 117.745 0h-9.131l21.753 32.09L108.734 64h9.131a7.637 7.637 0 0 0 6.323-3.352l12.091-17.836a.82.82 0 0 1 1.356 0l12.091 17.836A7.636 7.636 0 0 0 156.05 64h9.131l-21.634-31.91L165.301 0ZM89.828 6.546V64h4.364a6.546 6.546 0 0 0 6.547-6.547V0h-4.364a6.546 6.546 0 0 0-6.547 6.546ZM81.83 0h-3.885a9.154 9.154 0 0 0-8.928 7.126L60.33 45.318 52.725 9.666C51.318 3.077 44.557-1.367 37.639.544c-4.407 1.217-7.674 4.94-8.627 9.41L21.485 45.27 12.813 7.128A9.162 9.162 0 0 0 3.883 0H0l14.555 63.997h5.515c5.004 0 9.328-3.499 10.372-8.393l9.305-43.664c.114-.542.6-.934 1.153-.934.552 0 1.038.392 1.153.934l9.312 43.667a10.603 10.603 0 0 0 10.373 8.39h5.533L81.829 0Z"
+              />
+            </g>
+            <defs>
+              <clipPath id="a">
+                <path d="M0 0h165.305v64H0z" />
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+        <nav>
+          <svg
+            id="hamburger-svg"
+            xmlns="http://www.w3.org/2000/svg"
+            width="800px"
+            height="800px"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path d="M4 18L20 18" stroke-width="2" stroke-linecap="round" stroke="currentColor" />
+            <path d="M4 12L20 12" stroke-width="2" stroke-linecap="round" stroke="currentColor" />
+            <path d="M4 6L20 6" stroke-width="2" stroke-linecap="round" stroke="currentColor" />
+          </svg>
+        </nav>
+        <div id="menu" class="menu">
+          <button type="button" id="close-btn" aria-label="close navigation">X</button>
+          <ul>
+            <li><a href="https://www.wix.com/">Home</a></li>
+            <li>
+              <a href="https://www.wix.com/accessibility">Website Accessibility</a>
+            </li>
+            <li>
+              <a href="https://www.wix.com/about/terms-accessibility">Accessibility Statement</a>
+            </li>
+            <li>
+              <a href="/a11y.html">a11y</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="main">
+        <section tabindex="0" class="section hero-section">
+          <div class="text-container">
+            <h2 class="h1">Welcome to the Accessibility Workshop</h2>
+            <p id="quote" tabindex="0">
+              "Accessibility isn’t about compliance. It’s not about ticking off checkboxes in an
+              accessibility checklist. It’s not about accessibility overlays either. Instead, it’s
+              about designing with a wide range of people in mind. It’s about including and
+              respecting everyone — independent of what skills and preferences they have."
+            </p>
+            <a href="https://mailchi.mp/smashingmagazine/412-accessibility-and-inclusive-design"
+              >Smashing Magazine</a
+            >
+          </div>
+          <div class="video-container">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/z8xUCzToff8"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </section>
+        <section class="section cards-section">
+          <h1 class="h2">Some facts about accessibility</h1>
+          <div role="list" class="cards-container">
+            <div role="listitem" class="card">
+              <h3>Fact 1</h3>
+              <div class="card-content">
+                <p>12% of men are color blind</p>
+              </div>
+            </div>
+            <div role="listitem" class="card">
+              <h3>Fact 2</h3>
+              <div class="card-content">
+                <p>Some screen reader users are not blind</p>
+              </div>
+            </div>
+            <div role="listitem" class="card">
+              <h3>Fact 3</h3>
+              <div class="card-content">
+                <p>1 billion people around the world have a disability</p>
+              </div>
+            </div>
+            <div role="listitem" class="card">
+              <h3>Fact 4</h3>
+              <div class="card-content">
+                <p>We all are temporarily body abled</p>
+              </div>
+            </div>
+            <div role="listitem" class="card">
+              <h3>Fact 5</h3>
+              <div class="card-content">
+                <p>"Albeism" is discrimination in favor of able-bodied people</p>
+              </div>
+            </div>
+            <div role="listitem" class="card">
+              <h3>Fact 6</h3>
+              <div class="card-content">
+                <p>1 out of 6 people around the world have a disability</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section form-section">
+          <div class="image-container">
+            <h2 class="h2">Remember!</h2>
+            <img id="image" src="/public/SteveJobs-on-Design.jpg" />
+          </div>
+          <form id="form">
+            <div class="input-container">
+              <label>Fill in your email to keep in touch &#128525;</label>
+              <input
+                pattern="[A-Za-z0-9._+-]+@[A-Za-z0-9-]+\.[a-z]{2,}\.[a-z]{2,}"
+                required
+                placeholder="elli@gmail.com"
+                type="email"
+              />
+            </div>
+            <button id="submit-btn" tabindex="1">Submit</button>
+          </form>
+        </section>
+      </div>
+      <div id="footer">
+        <p id="paragraph">Created by e11i</p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+  <!-- lang="en" -->
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/colors.css" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="color-scheme" content="dark light" />
+    <title>A11y Workshop</title>
+    <link rel="icon" type="image/x-icon" href="assets/a11y-favicon.ico" />
+  </head>
+
+  <body aria-hidden="true">
+    <!--  -->
+    <div class="button-container">
+      <button id="explain">Present a11y issues</button>
+    </div>
+
+    <div class="page-content">
+      <div class="container">
+        <div id="header">
+          <button id="theme-toggle" aria-label="toggle theme">
+            <svg
+              id="moon-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <svg
+              id="sun-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              style="display: none"
+            >
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </button>
+          <nav>
+            <div id="hamburger-btn" role="button" tabindex="0" aria-label="Open menu">
+              <svg
+                id="hamburger-svg"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M4 18L20 18"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke="currentColor"
+                />
+                <path
+                  d="M4 12L20 12"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke="currentColor"
+                />
+                <path d="M4 6L20 6" stroke-width="2" stroke-linecap="round" stroke="currentColor" />
+              </svg>
+            </div>
+          </nav>
+          <div id="menu" class="menu">
+            <button type="button" id="close-btn" class="close" aria-label="close navigation">
+              X
+            </button>
+            <ul>
+              <li><a href="https://www.wix.com/">Home</a></li>
+              <li>
+                <a href="https://www.wix.com/accessibility">Website Accessibility</a>
+              </li>
+              <li>
+                <a href="https://www.wix.com/about/terms-accessibility">Accessibility Statement</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="main">
+          <section class="section hero-section">
+            <div class="text-container">
+              <h2 class="h1">Accessibility Workshop</h2>
+              <p id="quote">
+                "Accessibility isn't about compliance. It's not about ticking off checkboxes in an
+                accessibility checklist. It's not about accessibility overlays either. Instead, it's
+                about designing with a wide range of people in mind. It's about including and
+                respecting everyone — independent of what skills and preferences they have."
+              </p>
+              <a href="https://mailchi.mp/smashingmagazine/412-accessibility-and-inclusive-design"
+                >Smashing Magazine</a
+              >
+            </div>
+            <div class="video-container">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/qi0tY60Hd6M?si=JeBTT719Cq1ZKTaN"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </section>
+          <section class="cards-section section">
+            <video class="video-background" autoplay muted loop playsinline>
+              <source src="/assets/3172307-hd_1920_1080_30fps.mp4" type="video/mp4" />
+            </video>
+            <h1 class="h2">Some facts about accessibility</h1>
+            <div class="cards-container">
+              <div class="card">
+                <h3>Fact 1</h3>
+                <div class="card-content">
+                  <p>12% of men are color blind</p>
+                </div>
+              </div>
+              <div class="card">
+                <h3>Fact 2</h3>
+                <div class="card-content">
+                  <p>Some screen reader users are not blind</p>
+                </div>
+              </div>
+              <div class="card">
+                <h3>Fact 3</h3>
+                <div class="card-content">
+                  <p>1 billion people around the world have a disability</p>
+                </div>
+              </div>
+              <div class="card">
+                <h3>Fact 4</h3>
+                <div class="card-content">
+                  <p>We are all temporarily abled</p>
+                </div>
+              </div>
+              <div class="card">
+                <h3>Fact 5</h3>
+                <div class="card-content">
+                  <p>
+                    ARIA doesn't affect functionality only the semantics for a screen reader user
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <h3>Fact 6</h3>
+                <div class="card-content">
+                  <p>Only 25-35% of accessibility issues can be automatically detected</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="section form-section">
+            <h2 class="h2">Accessibility Is More Than ARIA and Screen Readers</h2>
+            <div class="form-section-content">
+              <div class="image-column">
+                <figure>
+                  <img id="image" src="assets/aria.jpeg" />
+                  <!-- alt="A meme depicting a man pouring an excessively large amount of oil into a dish, labeled in a humorous context. The man is tagged as 'Full Stack Developer,' the large bottle of oil is labeled 'ARIA,' and the dish being drenched is labeled 'Accessible Website'" -->
+                  <figcaption>
+                    This meme illustrates the common misconception that adding ARIA (Accessible Rich
+                    Internet Applications) is a one-size-fits-all solution to make websites
+                    accessible.
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="form-column">
+                <form id="form">
+                  <div class="input-container">
+                    <label>Fill in your email to keep in touch</label>
+                    <!-- for="email" -->
+                    <input
+                      pattern="[A-Za-z0-9._+-]+@[A-Za-z0-9-]+\.[a-z]{2,}\.[a-z]{2,}"
+                      required
+                      type="email"
+                      id="email"
+                    />
+                  </div>
+                  <button id="submit-btn" tabindex="1">Submit</button>
+                </form>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div id="footer">
+          <p id="paragraph">Created by e11i</p>
+        </div>
+      </div>
+    </div>
+
+    <dialog id="error-modal">
+      <h2>Accessibility Issues</h2>
+      <div id="error-messages"></div>
+      <button id="close-modal">Close</button>
+    </dialog>
+    <!-- <canvas id="rive-canvas" width="500" height="500"></canvas> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

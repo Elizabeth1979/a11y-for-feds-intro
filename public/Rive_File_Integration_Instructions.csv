@@ -1,0 +1,21 @@
+Section,Details
+Introduction,"Learn how to use the .riv file created in the Rive Editor to display animations on your website. This involves adding the Rive runtime, setting up a canvas, and using JavaScript to load the animation."
+Step 1: Include the Rive Runtime,"Add the Rive runtime to your project using a CDN link. Use the following HTML snippet: 
+
+<script src='https://unpkg.com/@rive-app/canvas@latest'></script>
+
+This ensures the Rive object is available globally."
+Step 2: Create a Canvas,"Add a <canvas> element in your HTML where the animation will be displayed. For example: 
+
+<canvas id='riveCanvas' width='500' height='500'></canvas>
+
+Adjust width and height as needed."
+Step 3: Load the Rive File,"Load the .riv file using the Rive JavaScript API and link it to the canvas. Example code: 
+
+const rive = new Rive({ src: 'path/to/your/file.riv', canvas: document.getElementById('riveCanvas'), autoplay: true });"
+Step 4: Host the Rive File,Upload your .riv file to your server or hosting platform. Ensure the file is accessible via a public URL and that the path in your JavaScript code matches the file location.
+Step 5: Optional: Add Interactivity,"Use the Rive API for advanced controls, like pausing, playing, or interacting with animations. For example: 
+
+rive.pause();
+rive.play();"
+Additional Notes,"Ensure your .riv file is hosted correctly, and your website has a properly linked canvas and runtime. For more advanced features, consult Rive's official documentation at https://help.rive.app."
