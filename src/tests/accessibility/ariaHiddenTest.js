@@ -12,8 +12,7 @@ export class AriaHiddenTest {
     if (ariaHidden === "true") {
       console.log(ariaHidden);
       issueManager.addIssue(ERROR_MESSAGES.ARIA_HIDDEN);
-      // Completely remove from layout and screen reader
-      pageContent.style.display = "none";
+      pageContent.style.visibility = "hidden";
       return;
     }
   }

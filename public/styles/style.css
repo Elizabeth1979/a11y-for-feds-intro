@@ -137,14 +137,14 @@
   right: 1rem;
   background: none;
   border: none;
-  font-size: 1.5rem;
+  font-size: 1rem;
   cursor: pointer;
   color: var(--text-color);
   padding: 0.5rem;
-}
-
-.close:hover {
-  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
 }
 
 /* ==========================================================================
@@ -369,7 +369,6 @@ button {
   font-size: 1rem;
   cursor: pointer;
   transition: all 0.2s ease;
-  min-width: 160px;
   font-weight: 500;
 }
 
@@ -528,25 +527,6 @@ body:has(dialog[open]) {
 }
 
 /* ==========================================================================
-   Utilities
-   ========================================================================== */
-.input-container label:not([for]),
-.input-container label[for=""] {
-  visibility: hidden;
-}
-
-.input-container label:not([for]) + input,
-.input-container label[for=""] + input {
-  &::placeholder {
-    opacity: 0;
-  }
-}
-
-body.modal-open {
-  overflow: hidden;
-}
-
-/* ==========================================================================
    Media Queries
    ========================================================================== */
 @media only screen and (max-width: 600px) {
@@ -556,12 +536,6 @@ body.modal-open {
 
   #header {
     padding: 0 1.5em;
-  }
-
-  .button-container {
-    flex-direction: column;
-    left: 1rem;
-    transform: none;
   }
 
   .section {

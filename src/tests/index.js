@@ -3,17 +3,16 @@
 import { AriaHiddenTest } from "./accessibility/ariaHiddenTest.js";
 import { AltTextTest } from "./accessibility/altTextTest.js";
 import { ButtonLabelTest } from "./accessibility/buttonLabelTest.js";
-import { LabelTest } from "./accessibility/labelTest.js";
+import { FormLabelTest } from "./accessibility/formLabelTest.js";
 import { LangTest } from "./accessibility/langTest.js";
-import { MotionTest } from "./accessibility/motionTest.js";
+// import { MotionTest } from "./accessibility/motionTest.js";
 
 export const accessibilityTests = {
-  // AriaHiddenTest,
-  // LangTest,
+  AriaHiddenTest,
+  LangTest,
   AltTextTest,
-  // LabelTest,
-  // ButtonLabelTest,
-  // MotionTest,
+  FormLabelTest,
+  ButtonLabelTest,
 };
 
 export async function runAllTests() {

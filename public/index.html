@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <!-- lang="en" -->
   <head>
     <meta charset="UTF-8" />
@@ -12,8 +12,8 @@
     <link rel="icon" type="image/x-icon" href="assets/a11y-favicon.ico" />
   </head>
 
-  <body aria-hidden="true">
-    <!--  -->
+  <body>
+    <!-- aria-hidden="true" -->
     <div class="button-container">
       <button id="explain">Present a11y issues</button>
     </div>
@@ -179,7 +179,7 @@
             <div class="form-section-content">
               <div class="image-column">
                 <figure>
-                  <img id="image" src="assets/aria.jpeg" />
+                  <img id="image" alt="meme" src="/assets/aria.jpeg" width="484" height="531" />
                   <!-- alt="A meme depicting a man pouring an excessively large amount of oil into a dish, labeled in a humorous context. The man is tagged as 'Full Stack Developer,' the large bottle of oil is labeled 'ARIA,' and the dish being drenched is labeled 'Accessible Website'" -->
                   <figcaption>
                     This meme illustrates the common misconception that adding ARIA (Accessible Rich
@@ -191,9 +191,10 @@
               <div class="form-column">
                 <form id="form">
                   <div class="input-container">
-                    <label>Fill in your email to keep in touch</label>
+                    <label for="email" id="email-label">Fill in your email to keep in touch</label>
                     <!-- for="email" -->
                     <input
+                      tabindex="2"
                       pattern="[A-Za-z0-9._+-]+@[A-Za-z0-9-]+\.[a-z]{2,}\.[a-z]{2,}"
                       required
                       type="email"
@@ -215,7 +216,7 @@
     <dialog id="error-modal">
       <h2>Accessibility Issues</h2>
       <div id="error-messages"></div>
-      <button id="close-modal">Close</button>
+      <button aria-label="close" class="close" id="close-modal">X</button>
     </dialog>
     <!-- <canvas id="rive-canvas" width="500" height="500"></canvas> -->
 

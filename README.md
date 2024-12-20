@@ -1,6 +1,32 @@
 # Web Accessibility Workshop for Frontend Developers
 
-## Overview
+## Learning objectives
+
+This workshop is designed to help frontend developers understand and experience web accessibility challenges firsthand. Instead of relying on screen readers, the workshop creates visual simulations of accessibility issues, making it easier for visual learners to understand the impact of poor accessibility practices.
+
+## What to do?
+
+1. Clone the repo, install the dependencies, and run `npm run dev`
+2. Run Google Lighthouse at the start and after every fix
+3. Tackle accessibility issues ONE BY ONE and learn more about each from the supplied link
+4. Note that every time you correct an issue and save changes, the impact is visually presented on screen
+5. Inspect the Accessibility tree in the developer tools
+6. Inspect the Accessibility tab for specific element - look at the information (role, name, other)
+
+## How?
+
+### Semantic HTML
+
+1. aria-hidden
+2. lang attribute
+3. alt attribute
+4. label for input
+5. button label
+
+### Keyboard Navigation
+
+
+
 
 This workshop is designed to help frontend developers understand and experience web accessibility challenges firsthand. Instead of relying on screen readers, the workshop creates visual simulations of accessibility issues, making it easier for visual learners to understand the impact of poor accessibility practices.
 

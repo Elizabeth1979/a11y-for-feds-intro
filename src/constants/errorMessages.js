@@ -17,8 +17,8 @@ export const ERROR_MESSAGES = {
       "Add descriptive alt text to make the content accessible to screen readers using the alt decision tree.",
     link: "https://www.w3.org/WAI/tutorials/images/decision-tree/",
   },
-  MISSING_LABEL: {
-    title: "Label-Input Connection Missing",
+  MISSING_FORM_LABEL: {
+    title: "Form Label-Input Connection Missing",
     description:
       'Input and label must be connected using matching "id" and "for" attributes for proper accessibility.',
     link: "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label",

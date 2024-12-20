@@ -67,7 +67,10 @@ export const prefersReducedMotion = () => {
 export const createImagePlaceholder = (imageSrc) => {
   const placeholder = document.createElement("img");
   placeholder.src = "http://missing-alt-text-error.invalid";
-  placeholder.style.border = "2px solid red";
+  placeholder.width = 484;
+  placeholder.height = 531;
+  placeholder.style.border = "1px solid red";
   placeholder.style.margin = "1em 0";
+  placeholder.appendChild(document.createTextNode(imageSrc));
   return placeholder;
 };
