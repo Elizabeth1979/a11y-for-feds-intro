@@ -18,10 +18,23 @@ export class ButtonLabelTest {
     if (!ariaLabel || ariaLabel.trim() === "") {
       // Change button text to "button" and hide it if no aria-label
       closeButton.textContent = "button";
-      // Prevent closing via Esc key
+
+      // Prevent closing via click outside
+      modal.onclick = (e) => {
+        if (e.target === modal) {
+          e.preventDefault();
+        }
+      };
+
+      // Prevent closing via Escape key
       modal.addEventListener("cancel", (event) => {
         event.preventDefault();
       });
+
+      // Prevent closing via close button
+      closeButton.onclick = (e) => {
+        e.preventDefault();
+      };
 
       // Add issue to the issues list
       issueManager.addIssue(ERROR_MESSAGES.MISSING_BUTTON_LABEL);
