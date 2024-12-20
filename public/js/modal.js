@@ -9,9 +9,6 @@ export function showModal(issues = []) {
   }
 
   try {
-    // Lock page scroll
-    document.body.style.overflow = "hidden";
-
     // Clear existing content
     errorMessages.innerHTML = "";
 
@@ -67,8 +64,6 @@ export function initializeModal() {
   function closeModalHandler() {
     if (modal) {
       modal.close();
-      document.body.style.overflow = "";
-      document.body.classList.remove("modal-open");
     }
   }
 

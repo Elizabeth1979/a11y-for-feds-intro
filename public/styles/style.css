@@ -414,14 +414,17 @@ button.secondary:hover {
    ========================================================================== */
 /* Buttons */
 .button-container {
-  display: flex;
-  gap: 1em;
   position: fixed;
-  align-items: center;
-  z-index: 1000;
-  left: 50%;
-  top: 2.5rem;
-  transform: translate(-50%, -50%);
+  inset-block-start: 1rem;
+  inset-inline: 0;
+  z-index: 200;
+  text-align: center;
+}
+
+.button-container button {
+  width: max-content;
+  min-width: unset;
+  margin-inline: auto;
 }
 
 #check,
@@ -521,6 +524,11 @@ dialog {
 
 dialog::backdrop {
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+dialog[open] ~ body,
+body:has(dialog[open]) {
+  overflow: hidden;
 }
 
 /* ==========================================================================
