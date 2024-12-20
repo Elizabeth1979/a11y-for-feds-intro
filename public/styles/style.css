@@ -161,7 +161,8 @@
   line-height: 1.2;
   margin-bottom: 0.5em;
   font-size: clamp(3rem, 5vw, 4rem);
-  background: linear-gradient(45deg, #b76eb3, #3a086d);
+  font-weight: 700;
+  background: linear-gradient(45deg, #f667ef, #8d35e6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -234,12 +235,14 @@
 }
 
 .cards-section .h2 {
+  position: relative;
+  z-index: 1;
   margin-bottom: 0;
 }
 
 .h2 {
   margin-bottom: 1em;
-  color: var(--text-color);
+  color: var(--heading-color);
   font-size: clamp(2rem, 5vw, 2.5rem);
 }
 
@@ -390,6 +393,18 @@ button.secondary {
 
 button.secondary:hover {
   background-color: var(--primary-50);
+}
+
+/* Links */
+.hero-section a {
+  text-decoration: underline;
+  color: var(--link-color);
+  transition: color 0.2s ease;
+}
+
+.hero-section a:hover,
+.hero-section a:focus {
+  color: var(--link-hover);
 }
 
 /* ==========================================================================

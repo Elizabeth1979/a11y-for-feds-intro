@@ -104,7 +104,7 @@
         <div id="main">
           <section class="section hero-section">
             <div class="text-container">
-              <h2 class="h1">Accessibility Workshop</h2>
+              <h1 class="h1">Accessibility Workshop</h1>
               <p id="quote">
                 "Accessibility isn't about compliance. It's not about ticking off checkboxes in an
                 accessibility checklist. It's not about accessibility overlays either. Instead, it's
@@ -129,10 +129,10 @@
             </div>
           </section>
           <section class="cards-section section">
-            <video class="video-background" autoplay muted loop playsinline>
+            <video aria-hidden="true" class="video-background" autoplay muted loop playsinline>
               <source src="/assets/3172307-hd_1920_1080_30fps.mp4" type="video/mp4" />
             </video>
-            <h1 class="h2">Some facts about accessibility</h1>
+            <h2 class="h2">Some facts about accessibility</h2>
             <div class="cards-container">
               <div class="card">
                 <h3>Fact 1</h3>
@@ -175,7 +175,7 @@
             </div>
           </section>
           <section class="section form-section">
-            <h2 class="h2">Accessibility Is More Than ARIA and Screen Readers</h2>
+            <h2 class="h2">To ARIA or not to ARIA</h2>
             <div class="form-section-content">
               <div class="image-column">
                 <figure>
@@ -188,20 +188,21 @@
                   </figcaption>
                 </figure>
               </div>
-              <div class="form-column">
+              <div class="form-column" tabindex="0">
                 <form id="form">
                   <div class="input-container">
-                    <label for="email" id="email-label">Fill in your email to keep in touch</label>
+                    <label for="email" id="email-label">Fill in your email</label>
                     <!-- for="email" -->
                     <input
-                      tabindex="2"
                       pattern="[A-Za-z0-9._+-]+@[A-Za-z0-9-]+\.[a-z]{2,}\.[a-z]{2,}"
                       required
                       type="email"
                       id="email"
                     />
+                    <!-- tabindex="2" -->
                   </div>
-                  <button id="submit-btn" tabindex="1">Submit</button>
+                  <button id="submit-btn">Submit</button>
+                  <!-- tabindex="1" -->
                 </form>
               </div>
             </div>

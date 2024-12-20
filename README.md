@@ -22,12 +22,15 @@ This workshop is designed to help frontend developers understand and experience 
 3. alt attribute
 4. label for input
 5. button label (accessibility tab)
-6. video error - Bonus
+6. video error
+7. positive tabindex
 
-### Keyboard Navigation
+Lighthouse score is 100%? lets continue to Keyboard
 
-1. tabindex
-2. focus indicator
+### Keyboard
+
+1. focus indicator
+2. tabbing through interactive
 3. focus management (document.activeElement)
 
 ## Learning Objectives
