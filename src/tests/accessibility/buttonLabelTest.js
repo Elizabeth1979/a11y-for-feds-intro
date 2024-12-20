@@ -12,14 +12,12 @@ export class ButtonLabelTest {
       return;
     }
 
-    // Check if button has aria-label
-    if (!hasAttribute(closeButton, "aria-label")) {
-      // Hide the button if no aria-label
-      closeButton.style.display = "none";
+    // Check if button has aria-label and it's not empty
+    const ariaLabel = closeButton.getAttribute("aria-label");
 
-      // Remove click event listeners to prevent closing via button
-      closeButton.replaceWith(closeButton.cloneNode(true));
-
+    if (!ariaLabel || ariaLabel.trim() === "") {
+      // Change button text to "button" and hide it if no aria-label
+      closeButton.textContent = "button";
       // Prevent closing via Esc key
       modal.addEventListener("cancel", (event) => {
         event.preventDefault();

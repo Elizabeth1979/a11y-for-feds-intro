@@ -449,7 +449,7 @@ button.secondary:hover {
   background-color: var(--surface-color);
   padding: 2em;
   border-radius: 0.75rem;
-  width: 90%;
+  width: 60%;
   max-width: 1200px;
   max-height: 80vh;
   overflow-y: auto;

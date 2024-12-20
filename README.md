@@ -17,29 +17,29 @@ This workshop is designed to help frontend developers understand and experience 
 
 ### Semantic HTML
 
-1. aria-hidden
+1. aria-hidden (accessibility tree)
 2. lang attribute
 3. alt attribute
 4. label for input
-5. button label
+5. button label (accessibility tab)
+6. video error - Bonus
 
 ### Keyboard Navigation
 
-
-
-
-This workshop is designed to help frontend developers understand and experience web accessibility challenges firsthand. Instead of relying on screen readers, the workshop creates visual simulations of accessibility issues, making it easier for visual learners to understand the impact of poor accessibility practices.
+1. tabindex
+2. focus indicator
+3. focus management (document.activeElement)
 
 ## Learning Objectives
 
 Through this workshop, you'll experience how users with disabilities might interact with inaccessible websites. The exercises simulate various accessibility issues:
 
-- Content hidden from screen readers (`aria-hidden`)
-- Language identification problems (scrambled text)
-- Missing image descriptions (raw image URLs instead of meaningful descriptions)
-- Unlabeled form fields (empty inputs without context)
-- Inaccessible buttons (unclear button purposes)
-- Keyboard navigation issues (invisible focus indicators)
+1. Hidden Content
+2. Language Settings
+3. Image Accessibility
+4. Form Accessibility
+5. Button Accessibility
+6. Status Updates
 
 ## Getting Started
 
