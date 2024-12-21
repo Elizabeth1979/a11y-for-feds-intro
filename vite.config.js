@@ -8,8 +8,7 @@ export default defineConfig({
     emptyOutDir: true,
     rollupOptions: {
       input: {
-        main: resolve(__dirname, 'public/index.html'),
-        a11y: resolve(__dirname, 'public/a11y.html')
+        main: resolve(__dirname, 'public/index.html')
       }
     }
   },
@@ -19,6 +18,6 @@ export default defineConfig({
     }
   },
   server: {
-    open: '/index.html'
+    port: 3000
   }
 });

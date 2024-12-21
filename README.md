@@ -7,7 +7,7 @@ This workshop is designed to help frontend developers understand and experience 
 ## What to do?
 
 1. Clone the repo, install the dependencies, and run `npm run dev`
-2. Run Google Lighthouse at the start and after every fix
+2. Run Google Lighthouse at the start and after every fix and bring the Lighthouse score to 100%
 3. Tackle accessibility issues ONE BY ONE and learn more about each from the supplied link
 4. Note that every time you correct an issue and save changes, the impact is visually presented on screen
 5. Inspect the Accessibility tree in the developer tools
@@ -15,23 +15,26 @@ This workshop is designed to help frontend developers understand and experience 
 
 ## How?
 
-### Semantic HTML
+### Semantic HTML & Keyboard
 
-1. aria-hidden (accessibility tree)
+Automatic tests
+
+1. aria-hidden
 2. lang attribute
 3. alt attribute
 4. label for input
-5. button label (accessibility tab)
-6. video error
-7. positive tabindex
+5. video error
+6. positive tabindex
 
-Lighthouse score is 100%? lets continue to Keyboard
+Lighthouse score is 100%!
+But we are not done yet... More checks to do both on dynamic content and keyboard interactions
 
-### Keyboard
-
-1. focus indicator
-2. tabbing through interactive
-3. focus management (document.activeElement)
+Click "Present a11y issues" button
+7. button label in the modal
+8. blockquote
+9. tabindex="0" on a non interactive element
+10. focus indicator
+11. focus management (document.activeElement)
 
 ## Learning Objectives
 
